@@ -1,0 +1,59 @@
+
+#remember {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+#remember + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+#remember + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #F2CFD0; /* Change the border color here */
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+#remember:hover + label:before {
+  border-color: #F2CFD0;
+}
+
+/* When the checkbox is checked, add a red background */
+#remember:checked + label:before {
+  background-color: #F2CFD0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#remember + label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#remember:checked + label:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#remember + label:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

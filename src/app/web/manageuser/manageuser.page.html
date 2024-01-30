@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>manageuser</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <header>
+        <h1>Agent List</h1>
+      </header>
+    
+      <main>
+        <div class="top-bar">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-input" placeholder="Search by name">
+            <!-- Add any additional search parameters as needed -->
+          </div>
+          <button class="add-agent-btn" onclick="loadModalContent()">
+            <i class="fas fa-plus"></i> Add Agent
+          </button>
+        </div>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Location Assigned</th>
+              <th>Documents Assigned</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="agentTableBody">
+            <!-- Agent rows will be dynamically generated here -->
+            <tr>
+              <td>1</td>
+              <td>Agent Name</td>
+              <td>agentExample.com</td>
+              <td>City, Country</td>
+              <td>Document 1, Document 2</td>
+              <td>
+                <div class="actions">
+                  <div class="icon delete-agent" data-tooltip="Delete Agent" onclick="deleteAgent(this)">
+                    <i class="fas fa-trash"></i>
+                  </div>
+                  <div class="icon edit-agent" data-tooltip="Edit Agent">
+                    <i class="fas fa-edit"></i>
+                  </div>
+                  <div class="icon locate-agent" data-tooltip="Locate Agent">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- Repeat for each agent -->
+          </tbody>
+        </table>
+    
+      </main>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

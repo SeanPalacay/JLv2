@@ -1,0 +1,26 @@
+.page {
+    font-family:"Calibri", sans-serif !important;
+    letter-spacing: -1px !important;
+    line-height: 0.6;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+  }
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgba(12, 92, 212, 0.445);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 57, 143, 0.671);
+
+}
+
+.selected:not(.page){
+    border: 2px dotted rgb(0, 68, 255);
+    background-color: rgb(240, 252, 255);
+}
+//lect-none cursor-pointer w-full  hover:bg-gray-50 py-1
+        // border-dotted border-2 border-sky-200 hover:border-blue-600 flex rounded justify-center items-center text-black

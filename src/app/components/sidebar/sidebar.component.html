@@ -1,0 +1,28 @@
+<ion-list>
+  <ion-list-header>
+    <ion-label class="mb-10 mt-10 poppins-b text-xl">Quanby - Formify</ion-label>
+  </ion-list-header>
+  <ion-menu-toggle autoHide="false" *ngFor="let p of accountPages; let i = index">
+    <ion-item [routerLink]="p.url">
+      <ion-icon slot="start" [name]="p.ionicIcon? p.ionicIcon: ''"></ion-icon>
+      <ion-label>
+        {{p.title}}
+      </ion-label>
+    </ion-item>
+
+  </ion-menu-toggle>
+  <br>
+    
+  <ion-item routerLink="/auth/signup">
+      <ion-icon slot="start" name="alert-circle-outline"></ion-icon>
+      <ion-label>
+        Report a Problem
+      </ion-label>
+    </ion-item>
+    <ion-item routerLink="/web/login">
+      <ion-icon slot="start" name="log-out-outline"></ion-icon>
+      <ion-label>
+       Logout
+      </ion-label>
+    </ion-item>
+</ion-list>

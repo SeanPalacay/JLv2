@@ -1,0 +1,1 @@
+del android;ionic build; npx capacitor add android;npx capacitor sync; npx capacitor open android

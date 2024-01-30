@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true">
+
+  <!-- start -->
+  <div class="mx-8 mt-10 mb-10">
+
+    <!-- id name -->
+    <div class="flex flex-row justify-center items-center mb-6 ">
+      <div class="basis-1/6 text-center">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/communication" text=""></ion-back-button>
+        </ion-buttons>
+      </div>
+      <div class="basis-4/6 text-center">
+        <p class="text-[#CC4F5B] text-2xl font-semibold"> Mike Maxwell</p>
+      </div>
+      <div class="basis-1/6 text-right">
+        <ion-icon (click)="openSettings()" slot="icon-only" name="ellipsis-vertical"> </ion-icon>
+      </div>
+    </div>
+    <!-- end id name -->
+
+    <!-- start chat contents -->
+    <div>
+      <!-- other person -->
+      <div class="flex flex-row"> <!--  *ngIf="isMessageVisible" -->
+        <div class="bg-white rounded-xl w-2/3 mt-4">
+          <p class="text-gray-900 px-4 py-4"> What's up? </p>
+        </div>
+      </div>
+
+      <!-- me -->
+      <div *ngFor="let message of messages" class="flex flex-row-reverse">
+      
+        <div class="bg-blue-700 rounded-xl w-2/3 mt-4">
+          <p class="text-white px-4 py-4">{{ message }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- end chat contents -->
+
+  </div>
+  <!-- end -->
+
+</ion-content>
+
+<!-- Footer -->
+<div class="fixed bottom-0 left-0 w-full bg-transparent py-10 px-8">
+  <ion-input class="ion-padding send" placeholder="Message here..." [(ngModel)]="messageToSend">
+    <ion-icon slot="end" name="arrow-up-outline" (click)="sendMessageKo()"></ion-icon>
+    <!-- <ion-icon slot="end" name="arrow-down-outline" (click)="showMyMessage()"></ion-icon> -->
+  </ion-input>
+</div>

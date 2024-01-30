@@ -1,0 +1,20 @@
+<!-- your-component.component.html -->
+<div class="main-container">
+  <div class="modal-container">
+    <ion-icon name="exit" class="exit-icon" (click)="exitModal()"></ion-icon>
+    <div class="modal-content">
+      <h2 class="modal-title poppins-b">SELECT FORM</h2>
+      <ul class="form-list">
+        <li *ngFor="let form of forms" (click)="selectFormClicked(form)">
+          {{ form }}
+        </li>
+      </ul>
+      <button
+        (click)="selectFormClicked(selectedForm)"
+        class="select-button poppins"
+      >
+        SELECT
+      </button>
+    </div>
+  </div>
+</div>

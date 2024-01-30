@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+  <div class="h-screen flex flex-col justify-start">
+    <div class="flex justify-between items-center">
+      <div class="flex justify-center items-center">
+        <ion-button
+          (click)="goToUploadPage()"
+          id="back-button"
+          fill="clear"
+          color="custom-color"
+        >
+          <ion-icon name="chevron-back" style="color: #F55563"></ion-icon>
+        </ion-button>
+        <p class="poppins-b text-lg" style="color: #F55563">Drafts</p>
+      </div>
+      <div>
+        <ion-button
+          (click)="openOptionsMenu()"
+          id="options-button"
+          fill="clear"
+          color="custom-color"
+        >
+          <ion-icon
+            name="ellipsis-horizontal"
+            style="color: #F55563"
+          ></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-col">
+        <div
+          class="flex items-center my-1 mx-5"
+          *ngFor="let formData of formDrafts; let i = index"
+        >
+          <div class="roboto font-bold primary-color-bg mr-3.5 py-1.5 px-3.5">
+            {{ i + 1 }}
+          </div>
+          <div class="item-title roboto grow primary-color-text py-1.5 px-3.5">
+            {{ formData.title }}
+          </div>
+
+          <button
+            (click)="editForm(formData)"
+            class="edit-button poppins primary-color-text bg-white ml-2.5 py-1.5 px-2.5"
+          >
+            Edit
+          </button>
+
+          <button
+            (click)="uploadForm(formData)"
+            class="upload-button poppins text-white secondary-color-bg ml-2.5 py-1.5 px-2.5"
+          >
+            Upload
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

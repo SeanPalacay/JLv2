@@ -1,0 +1,67 @@
+<div class="flex w-full h-full">
+  <!-- SIDE BAR -->
+  <div class="w-[20%] bg-white"></div>
+  <div class="w-full h-full bg-gray-100">
+    <!-- HEADER -->
+    <div class="h-[5%] flex justify-between ">
+      <div class="text-gray-900 h-full w-60 flex items-center justify-center font-bold poppins-sb text-lg select-none">Create New Form</div>
+      <div class="flex">
+        <div class="flex justify-center p-1 items-center h-full w-44">
+          <button class="w-full h-full hover:bg-gray-200 rounded-lg flex place-content-center items-center">
+            <i class=' text-red-600 bx bxs-show text-xl'></i><span class="ml-2 text-gray-900 poppins">Form View</span>
+          </button>
+        </div>
+        <div class="h-full w-40 p-1 poppins">
+          <button class="rounded-lg w-full h-full hover:bg-red-500 bg-red-600 text-white">
+            Publish Form
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="flex w-full h-full">
+      
+      <!-- LEFT -->
+      <div class="w-[75%] h-[88%] ">
+        <div class="h-[5%] text-gray-900 flex items-center pb-3 shadow-sm">
+          <p class="ml-20"><span class="poppins align-middle cursor-pointer select-none ">Manage Forms</span><i class='ml-2 bx bx-chevrons-right text-gray-400 text-xl align-middle select-none'></i><span class="select-none ml-2 text-red-800  align-middle poppins">Create New Form</span></p>
+        </div>
+        <div class="w-full h-full justify-center flex overflow-y-auto ">
+          <div id="page1" (click)="select($event)" class="selection container page mt-5 mb-10 w-[75%] h-[130%] border-dotted border-2  hover:border-red-300 bg-white shadow-lg hover:shadow-2xl rounded px-[2%] py-[2%] overflow-hidden"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="w-[25%] h-[92%] pb-4 p pl-1 pr-5 select-none">
+        <div class="w-full h-full bg-white overflow-hidden rounded-xl cursor-pointer border-sky-20 border-dotted border-2 hover:border-red-500 shadow-lg hover:shadow-2xl">
+          <!-- Side Toolbar -->
+          <div class="flex w-full h-[7%]">
+              <div class="flex-1 hover:bg-gray-50 cursor-pointer text-gray-400 active:text-lime-600 flex justify-center items-center poppins-sb select-none">Content</div>
+              <div class="flex-1 hover:bg-gray-50 cursor-pointer text-gray-400 active:text-lime-600 flex justify-center items-center poppins-sb select-none">Settings</div>
+          </div>
+          <!-- Side Content -->
+          <div class="w-full h-full p-5">
+            
+            <!-- Tip -->
+            <div class="poppins-sb text-gray-900 text-center mb-5"> Click an element to add it to your form</div>
+            <div class="h-[85%] w-full bg-gray-50 overflow-y-auto p-3  rounded-lg">
+              <ng-container  *ngFor="let tool of toolbarItems">
+                <div *ngIf="tool.name != ''" class="w-full h-[7%] py-1 px-1">
+                  <button (click)="tool.function()" class="w-full h-full hover:bg-gray-200 rounded-lg flex place-content-start items-center text-gray-500"
+                    [ngClass]="{'!text-gray-400': !currentHas('farmtable') && toolkey(tool.name) == 'farmtableentry'}"
+                  >
+                    <i class='ml-5 {{tool.icon}} text-lg'></i><span class="ml-5 poppins-sb">{{tool.name}}</span>
+                  </button>
+                </div>
+                <div *ngIf="tool.name == ''" class="h-0.5 w-full px-3 "> <div class="w-full h-full rounded bg-gray-300"></div></div>
+              </ng-container>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

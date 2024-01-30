@@ -1,0 +1,60 @@
+
+.main-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.modal-container {
+  color: #00a558;
+  height: auto;
+  width: 75%;
+  background-color: #fff; /* Adjust opacity as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+/* Add these styles to your CSS file or style block */
+.exit-icon {
+  color: #8d8aa3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form-list {
+  list-style: none;
+  padding: 0;
+}
+
+.form-list li {
+  background-color: #f2f1fa;
+  padding: 8px 0;
+  margin-bottom: 10px;
+}
+.form-list li.selected {
+  background-color: #f2f1fa;
+  padding: 8px 0;
+  margin-bottom: 10px;
+}
+
+.select-button {
+  background-color: #00a558;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,123 @@
+
+
+.topwrap .notif {
+    background-color: white;
+    color: #CC4F5B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: -10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.maintopwrap{
+    padding: 10px;
+}
+
+.topwrap .notif ion-icon {
+    font-size: 23px;
+}
+
+.topwrap .notif .badge {
+    transform: translate(52%, -50%);
+    border: 2px solid white;
+    position: absolute;
+    background: #CC4F5B;
+    color: white;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.topwrap .notif .badge h2 {
+    color: white;
+    margin: 0;
+    font-size: 10px;
+}
+
+.topwrap {
+    display: flex;
+    width: 100%;
+}
+
+.topwrap .user h1 {
+    color: #CC4F5B;
+    font-weight: bolder;
+}
+
+.search{
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    color: black;
+}
+.IC-filter{
+    position: absolute;
+    transform: translate(-13%, 14%);
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #00a457;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.IC-filter ion-img{
+    width: 23px;
+    height: 23px;
+    margin: 0;
+}
+.filter .filterwrap{
+    display: flex;
+    color:#CC4F5B;
+}
+.filter .filterwrap .filterbtn{ 
+    background-color: white;
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.actions{
+    border-right: 2px solid rgba(170, 169, 169, 0.607);
+    padding-right: 6px;
+}
+.bar{
+    padding-left: 6px;
+}
+
+/* Note: These styles should be located in your global stylesheet */
+ion-action-sheet.my-custom-class {
+    --background: #CC4F5B;
+    --backdrop-opacity: 0.6;
+    --button-background-selected: white;
+    --button-color: rgb(210, 208, 208);
+    --color: #fff;
+
+  }
+
+
+  
+
+@media screen and (max-width: 400px) {
+    .topwrap .user h1 {
+        font-size: 20px;
+        color: #CC4F5B;
+        font-weight: bolder;
+    }
+    
+}

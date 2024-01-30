@@ -1,0 +1,46 @@
+
+  
+  
+  
+  ion-back-button {
+    font-size: 1rem;
+    --color: #CC4F5B; /* Set to text-blue-700 color */
+  }
+  
+  ion-button {
+    --background: transparent;
+    --color: #CC4F5B; /* Set to text-blue-700 color */
+  }
+  
+  ion-icon {
+    font-size: 1.3rem;
+    color: #CC4F5B; /* Set to text-blue-700 color */
+  }
+
+  .send{
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    color: black;
+}
+
+.IC-filter{
+    position: absolute;
+    transform: translate(-13%, 14%);
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #CC4F5B;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.IC-filter ion-img{
+    width: 23px;
+    height: 23px;
+    margin: 0;
+}
+  

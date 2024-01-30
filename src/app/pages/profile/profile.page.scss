@@ -1,0 +1,154 @@
+.toggle-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: #E8E8E8;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .label-off,
+  .label-on {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+  }
+  
+  .label-off {
+    transform: translateX(0);
+  }
+  
+  .label-on {
+    transform: translateX(-100%);
+  }
+  
+  .toggle-slider:before {
+    content: '';
+    width: 50%;
+    height: 50px;
+    background-color: white; /* Change to the desired color */
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-input:checked + .toggle-slider:before {
+    transform: translateX(100%);
+  }
+  
+  .toggle-input:checked + .toggle-slider .label-off {
+    transform: translateX(-100%);
+  }
+  
+  .toggle-input:checked + .toggle-slider .label-on {
+    transform: translateX(0);
+  }
+  
+  .toggle-slider {
+    position: relative;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .toggle-label:first-child {
+    left: 57px; /* Adjust the left position as needed */
+    color: #F02B2D;
+  }
+  
+  .toggle-label:last-child {
+    right: 57px; /* Adjust the right position as needed */
+    color: #CC4F5B;
+  }
+
+  /* Additional styles for the toggle input when checked */
+.toggle-input:checked + .toggle-slider .toggle-label.off {
+    color: #CC4F5B;/* Change color when toggled to "On" */
+  }
+  
+  .toggle-input:checked + .toggle-slider .toggle-label.on {
+    color: #F02B2D; /* Change color when toggled to "Off" */
+  }
+
+
+  .content-content {
+    position: relative;
+    width: 100%;
+    height: 77px;
+  }
+  
+  .content-content .content-block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: #b7b7b7;
+    border-radius: 8px;
+  }
+  
+  .content-content .header {
+    position: absolute;
+    top: -1px;
+    left: 66px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #CC4F5B;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .content-content .element-ago {
+    position: absolute;
+    top: 1px;
+    left: 299px;
+    font-family: var(--UI-14-regular-font-family);
+    font-weight: var(--UI-14-regular-font-weight);
+    color: #F02B2D;
+    font-size: var(--UI-14-regular-font-size);
+    text-align: right;
+    letter-spacing: var(--UI-14-regular-letter-spacing);
+    line-height: var(--UI-14-regular-line-height);
+    font-style: var(--UI-14-regular-font-style);
+  }
+  
+  .content-content .he-ll-want-to-use {
+    position: absolute;
+    width: 269px;
+    top: 26px;
+    left: 66px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .content-content .divider-line {
+    position: absolute;
+    width: 277px;
+    height: 1px;
+    top: 76px;
+    left: 66px;
+    object-fit: cover;
+  }
+  

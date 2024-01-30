@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+
+  <a href="#" class="back-button hidden lg:inline-block">
+    <div class="circle">
+      ←
+    </div>
+  </a>
+  <!-- Centered and rounded small card with two columns -->
+  <div class="centered-small-card flex flex-col lg:flex-row floating-card">
+    <!-- Right column with black background -->
+    <div class="right-column lg:w-1/2 lg:order-2 lg:block pl-10 bg-black">
+      <!-- Centered and big image -->
+      <div class="flex items-center justify-center h-full">
+          <img src="assets/picbig.png" alt="Logo" class="logo" style="width: 60%; height: auto;">
+      </div>
+    </div>
+
+   <div class="left-column pl-10 pr-10 pt-10 pb-10 lg:order-1">
+    <img src="assets/logoquinby.png" alt="Logo" class="logo">
+    <p class="poppins-sb text-md primary-color-text hidden lg:inline-block">DIGITAL FORM ADMINISTRATION PANEL</p>
+    <p class="roboto text-xs mt-4 primary-color-text-50 hidden lg:inline-block">Welcome Back, Please login to your account</p>
+    <form>
+      <div class="mt-4 mb-4">
+        <label for="username" class="block login-input-color-text text-xs poppins-sb mb-2">Email</label>
+        <input type="text" id="username" [(ngModel)]="email" name="email"  placeholder="Type your email"
+               class="w-full text-xs border primary-color-border-50 roboto rounded-md py-2 px-3 focus:outline-none focus:border-red-500">
+      </div>
+  
+      <div class="mb-4">
+        <label for="password" class="block login-input-color-text text-xs poppins-sb mb-2">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Type your password" required
+               class="w-full text-xs border primary-color-border-50 roboto rounded-md py-2 px-3 focus:outline-none focus:border-red-500">
+      </div>
+  
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center">
+          <input type="checkbox" id="remember" name="remember" class="mr-2">
+          <label for="remember" class="text-xs roboto text-gray-600">Remember Password</label>
+        </div>
+        <a href="#" class="text-xs roboto text-gray-600 hover:underline" routerLink="/web/forgetpass">Forgot Password?</a>
+      </div>
+
+      <button type="submit" (click)="login()" class="w-full poppins-sb text-xs primary-color-bg text-white rounded-md py-2 px-4 focus:outline-none focus:shadow-outline-blue">
+        Login
+      </button>
+    </form>
+  </div>
+  
+
+    <!-- Right column with black background -->
+
+  </div>
+</ion-content>

@@ -1,0 +1,25 @@
+.search{
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    color: black;
+}
+.IC-filter{
+    position: absolute;
+    transform: translate(-13%, 14%);
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.IC-filter ion-img{
+    width: 23px;
+    height: 23px;
+    margin: 0;
+}

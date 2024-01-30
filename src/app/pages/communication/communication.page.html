@@ -1,0 +1,56 @@
+
+
+<ion-content [fullscreen]="true">
+
+    <!-- start -->
+  <div class="mx-8 mt-10 mb-10"> 
+      <!-- title -->
+      <div class="flex text-center justify-center mb-6"> 
+        <p class="text-3xl font-semibold text-[#CC4F5B]"> Messages </p>
+      </div>
+      
+      <!-- search bar -->
+      <ion-input class="ion-padding search" placeholder="Search">
+        <div class="IC-filter">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+      </ion-input>
+    </div>
+  
+    <!-- ppl -->
+  
+    <div class="flex-1 overflow-y-auto mx-8 mt-2"  (click)="navigateToCommContent()" >
+      <div >
+          <div class="flex mb-4 items-center">
+              <img src="./assets/logoquinby.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
+              <div class="flex-grow">
+                  <div class="flex justify-between"> 
+  
+                      <div>
+                          <p class="font-normal text-lg text-[#CC4F5B]">Cleo Calitisin</p>
+                      </div>
+                      <div class="mt-2.5 mr-2">
+                          <p class="font-normal text-lg rounded-full w-2 h-2 bg-[#CC4F5B] text-gray-500"> </p>
+                      </div>
+                      
+                  </div>
+                  <div class="flex justify-between"> 
+                      
+                      <div>
+                          <p class="font-normal text-md text-gray-700">What's up?</p>
+                      </div>
+                      <div>
+                          <p class="font-normal text-md text-gray-700"> 9:30</p>
+                      </div>
+                      
+                  </div>
+               
+                
+              </div>
+          </div>
+          </div>
+          </div>
+      
+    
+  </ion-content>
+  

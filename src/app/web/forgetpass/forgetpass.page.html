@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+
+  <!-- Centered and rounded small card with two columns -->
+  <div class="centered-small-card flex flex-col lg:flex-row floating-card">
+    <!-- Right column with black background -->
+    <div class="right-column lg:w-1/2 lg:order-2 lg:block pl-10 bg-black">
+      <!-- Centered and big image -->
+      <div class="flex items-center justify-center h-full">
+          <img src="assets/picbig.png" alt="Logo" class="logo" style="width: 60%; height: auto;">
+      </div>
+    </div>
+
+   <div class="left-column pl-10 pr-10 pt-10 lg:order-1">
+    <img src="assets/logoquinby.png" alt="Logo" class="logo">
+    <p class="poppins-sb text-md primary-color-text">DIGITAL FORM ADMINISTRATION PANEL</p>
+    <p class="roboto text-xs mt-4 primary-color-text-50">Forget your password?</p>
+    <form *ngIf="!isSent"> 
+      <div class="mb-4">
+        <label for="email" class="block login-input-color-text text-xs poppins-sb mb-2">Enter your email</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Type your email" required
+               class="w-full text-xs border primary-color-border-50 roboto rounded-md py-2 px-3 focus:outline-none focus:border-red-500">
+      </div>
+  
+      <button type="submit" (click)="resetPassword()" class="w-full poppins-sb text-xs primary-color-bg text-white rounded-md py-2 px-4 focus:outline-none focus:shadow-outline-blue">
+        submit
+      </button>
+    </form>
+
+    <div *ngIf="isSent" class="text-center"><h3 class="poppins text-[#CC4F5B]">CHECK YOUR EMAIL!!!</h3>
+      <div class="loader-container">
+        <div *ngIf="!showCheckmark" class="loader"></div>
+        <div *ngIf="showCheckmark" class="checkmark">&#10003;</div>
+      </div><br>
+      </div>
+  </div>
+
+
+  
+
+    <!-- Right column with black background -->
+
+  </div>
+</ion-content>

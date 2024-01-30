@@ -1,0 +1,1 @@
+del android;npx capacitor add android; npx capacitor open android

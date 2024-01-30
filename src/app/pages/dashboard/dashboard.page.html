@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="maintopwrap">
+    <div class="topwrap">
+      <div class="user"><h1 class="poppins-b">HEY, {{Agent}}! </h1></div>
+      <div class="notif" (click)="openModal()">
+        <ion-icon name="notifications"></ion-icon>
+       <div class="badge"><h2>3</h2></div> 
+      </div>
+    </div>
+
+    <ion-input class="ion-padding search" placeholder="Search">
+    </ion-input>
+
+    <div class="filter mt-3 flex">
+      <div class="filterwrap"><h1 class="poppins font-medium">All Forms</h1><div class="filterbtn ml-2"><ion-icon name="chevron-forward" class="m-0 h-[14px] w-[14px]"></ion-icon></div></div>
+      <div class="flex ml-auto actions" (click)="setOpen(true)">
+        <div class="text-[#CC4F5B] flex"><ion-icon class="h-[19px] w-[19px] -mt-[1px] mr-[4px]" name="{{optionicon}}"></ion-icon><h1 class="poppins font-medium">{{optiontext}}</h1></div>
+        <ion-action-sheet class="poppins-b"
+  [isOpen]="isActionSheetOpen"
+  header="Select sorting options :"
+  class="my-custom-class"
+  [buttons]="actionSheetButtons"
+  (didDismiss)="setOpen(false); logResult($event)"
+>
+</ion-action-sheet>
+        <div class="bg-[white] rounded-[50px] h-[18px] w-[18px] ml-2 justify-center text-center items-center"><ion-icon name="chevron-down" class="text-[#CC4F5B] m-0"></ion-icon></div>
+      </div>
+      <div class="bar"><ion-icon name="list" class="text-[#CC4F5B] h-[20px] w-[20px]"></ion-icon></div>
+      
+    </div>
+
+    
+  </div>
+
+</ion-content>

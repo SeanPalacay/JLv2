@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+   <div class="pl-10 pr-10 pt-20">
+    <img src="assets/brand.png" alt="Logo" class="pl-4">
+    <form>
+      <div class="mt-40 mb-4">
+        <input type="text" id="username" name="username"  placeholder="Email"
+               class="w-full text-xs roboto rounded-full h-12 py-2 px-3 focus:outline-none focus:scale-110 shadow-md">
+      </div>
+      
+      <div class="mb-4">
+        <input type="password" id="password" name="password" placeholder="Password" required
+               class="w-full text-xs roboto rounded-full h-12 py-2 px-3 focus:outline-none focus:border-blue-500 shadow-md">
+      </div>
+        
+      <button type="submit" class="w-full poppins-sb text-xs bg-red-500 h-12 text-white rounded-full py-2 px-4 focus:outline-none focus:shadow-outline-blue" routerLink="/tabs">
+        Login
+      </button>
+  
+      <div class="flex items-center justify-between mb-4 mt-4">
+        <div class="flex items-center">
+          <input type="checkbox" id="remember" name="remember" class="mr-2 h-6 w-6">
+          <label for="remember" class="text-xs roboto text-gray-600 py-1">Remember Password</label>
+        </div>
+        <a href="#" class="text-xs roboto text-gray-600 hover:underline py-1">Forgot Password?</a>
+      </div>
+      
+  
+    </form>
+  </div>
+</ion-content>

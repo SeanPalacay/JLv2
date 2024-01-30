@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div class="poppins-sb text-xl primary-color-bg h-20 text-white flex justify-between items-end p-3 mb-4">
+    <div>
+      <h1>Accomplished Forms</h1>
+    </div>
+    <div class="flex space-x-4">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-icon name="ellipsis-horizontal"></ion-icon>
+    </div>
+  </div>
+  
+  <div *ngFor="let data of dummyData" class="card pl-4 pr-4 pb-3">
+    <div class="bg-white h-16 w-full rounded-lg flex items-center pl-4">
+      <div class="w-1/4">
+        <img [src]="data.imgSrc" alt="Your image" class="w-7 h-auto object-cover rounded-lg">
+      </div>
+      <div class="w-1/2 text-start text-sm primary-color-text poppins-sb -ml-10">
+        <p>{{data.fileName}}</p>
+      </div>
+      <div class="w-1/4 flex justify-end space-x-2 ml-10 pr-4">
+        <ion-icon name="exit-outline" color="success"></ion-icon>
+        <ion-icon name="trash-outline" color="danger"></ion-icon>
+      </div>
+    </div>
+  </div>
+  
+  
+ 
+</ion-content>

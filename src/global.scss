@@ -1,0 +1,150 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+
+:root{
+  --primary-color:#CC4F5B;
+  --secondary-color: #F02B2D;
+  --accent-color: #F2F1FA;
+    --body-color: #f5f7f9;
+    --toggle-color: #DDD;
+    --sidebar-color: #FFF;
+    --text-color: #7F7F7F;
+    --white-color: #ffffff;
+    --tw-gradient-color:  var(--secondary-color),var(--primary-color);
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #CC4F5B;
+}
+
+.primary-color-bg {
+  background-color: #CC4F5B;
+}
+
+.secondary-color-bg {
+  background-color: #F02B2D;
+}
+
+.accent-color-bg {   
+  background-color: #F2F1FA;
+}
+
+.primary-color-text {
+  color: #CC4F5B;
+}
+
+.secondary-color-text {
+ color: #F02B2D;
+}
+
+.accent-color-text {   
+  color: #F2F1FA;
+}
+
+.primary-color-text-50{
+  color: rgb(204,79,91, 0.5); /* 0.5 represents 50% opacity */
+}
+
+.primary-color-border{
+  border-color:#CC4F5B;/* 0.5 represents 50% opacity */
+}
+.primary-color-border-50{
+  border-color: rgba(204,79,91, 0.5); /* 0.5 represents 50% opacity */
+}
+
+.login-input-color-text{
+  color: #2F3D4C;
+}
+
+@font-face {
+  font-family: 'Poppins-r';
+  src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-b';
+  src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Poppins-sb';
+  src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Roboto-r';
+  src: url('/assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+
+
+.roboto {
+  font-family: 'Roboto-r'
+}
+
+.poppins {
+  font-family: 'Poppins-r'
+}
+.poppins-b {
+  font-family: 'Poppins-b'
+}
+
+.poppins-sb {
+  font-family: 'Poppins-sb'
+}
+
+
+
+
+.gradient-color {
+  background-image: linear-gradient(to right, var(--tw-gradient-color), var(--tw-gradient-color));
+  background-size: 100% 100%;
+}
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ion-content {
+    --background: #F2F1FA;
+  }
+
+
+
+

@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="maintopwrap">
+    <div class="topwrap">
+      <div class="user"><h1>HEY, {{Agent}}! </h1></div>
+      <div class="notif" (click)="openModal()">
+        <ion-icon name="notifications"></ion-icon>
+       <div class="badge"><h2>3</h2></div> 
+      </div>
+    </div>
+
+    <ion-input class="ion-padding search" placeholder="Search">
+      <div class="IC-filter"><ion-img src="../../../assets/home/IC_Filter.png"></ion-img></div>
+    </ion-input>
+
+    <div class="forflex">
+      <div class="current">Current Tasks</div>
+      <div class="see">See more</div>
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <ng-container *ngFor="let card of cards">
+          <div class="swiper-slide">
+            <app-card-carousel></app-card-carousel>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="task">
+      <div class="taskHeader">
+          <h1>New Task</h1>
+          <ion-img class="refresh" src="../../../assets/home/reload.png"></ion-img>
+          <ion-img class="next"src="../../../assets/home/tasknext.png"></ion-img>
+      </div>
+        <div class="taskcontent">
+          <div class="content">
+          <div class="title"><h2>Disaster Aid Application Form</h2><div class="startbtn">Start</div></div>
+          <div class="address"><h2>Zone 4, Brgy. Makagingking ...</h2></div>
+        </div>
+
+        <div class="content">
+          <div class="title"><h2>Disaster Aid Application Form</h2><div class="startbtn">Start</div></div>
+          <div class="address"><h2>Zone 4, Brgy. Makagingking ...</h2></div>
+        </div>
+        <div class="content">
+          <div class="title"><h2>Disaster Aid Application Form</h2><div class="startbtn">Start</div></div>
+          <div class="address"><h2>Zone 4, Brgy. Makagingking ...</h2></div>
+        </div>
+        <div class="content">
+          <div class="title"><h2>Disaster Aid Application Form</h2><div class="startbtn">Start</div></div>
+          <div class="address"><h2>Zone 4, Brgy. Makagingking ...</h2></div>
+        </div>
+        </div>
+    </div>
+
+    
+  </div>
+
+</ion-content>

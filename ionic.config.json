@@ -1,0 +1,7 @@
+{
+  "name": "QuanbyFormify",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

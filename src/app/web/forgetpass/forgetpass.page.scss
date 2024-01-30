@@ -1,0 +1,108 @@
+.loader {
+    text-align: center;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #CC4F5B;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .checkmark {
+    text-align: center;
+    font-size: 40px;
+    color: #CC4F5B;
+  }
+  
+  /* Add this to your CSS file or style section */
+
+.centered-small-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%; /* Set the height of the card */
+    width: 60%; /* Set the width of the card */
+    margin: auto; /* Center horizontally */
+    position: absolute;
+    top: 0; bottom: 0; /* Center vertically */
+    left: 0; right: 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+  
+  .left-column{
+    flex: 1;
+    height: 100%;
+    border-top-left-radius: 10px; /* Set border-radius for rounded corners */
+    border-bottom-left-radius: 10px; /* Set border-radius for rounded corners */
+  }
+
+  .right-column {
+    flex: 1;
+    height: 100%;
+    border-top-right-radius: 10px; /* Set border-radius for rounded corners */
+    border-bottom-right-radius: 10px; /* Set border-radius for rounded corners */
+  }
+  
+  .left-column {
+    background-color: white;
+    /* Add any other styles for the left column */
+  }
+  
+  .right-column {
+    background-color: #CC4F5B;
+    /* Add any other styles for the right column */
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+
+  /* Add this to your CSS file or style section */
+
+.logo {
+    width: 30%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add margin to separate the logo from the form */
+  }
+  
+
+  .primary-color-bg {
+    background-color:#CC4F5B;
+  }
+  
+  .primary-color-bg:hover,
+  .primary-color-bg:focus {
+    background-color:red;
+  }
+
+  .floating-card {
+    animation: floatAnimation 4s ease-in-out infinite;
+  }
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+  .gradient-color {
+    background-image: linear-gradient(to right, var(--tw-gradient-color), var(--tw-gradient-color));
+    background-size: 300% 100%;
+}
